@@ -1,1 +1,1 @@
-console.log("I am from index.js!");
+conole.log("I am from index.js!");
