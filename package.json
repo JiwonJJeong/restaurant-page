@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "The Odin Project JavaScript project to use DOM manipulation to dynamically render a restaurant homepage. Aimed to use npm, webpack, npm scripts, and ESM in development and production.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jiwon Jeong",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
