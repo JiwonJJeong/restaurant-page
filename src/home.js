@@ -15,6 +15,7 @@
 <div class="attribution">
 <p>Woman in tavern photo by <a href="https://stockcake.com/i/medieval-tavern-joy_752875_804181">Stockcake</a></p>
 </div> */}
+import TavernImage from './images/happy-tavern-joy.jpg';
 
 const homePage = function(){
 
@@ -38,12 +39,16 @@ const homePage = function(){
         const descriptionTwo = createElement("p","","Terry's Terrific Tavern is THE place to meet new adventurers!");
         const headerThree = createElement("h2","","It's not just a bar");
         const descriptionThree = createElement("p","","Each meal is freshly prepared, locally sourced, and has the taste of fine dining!");
+        const happyGirlImage = new Image();
+        happyGirlImage.src = TavernImage;
+        happyGirlImage.alt = "girl smiling in tavern";
         descriptionArea.appendChild(headerOne);
         descriptionArea.appendChild(descriptionOne);
         descriptionArea.appendChild(headerTwo);
         descriptionArea.appendChild(descriptionTwo);
         descriptionArea.appendChild(headerThree);
         descriptionArea.appendChild(descriptionThree);
+        descriptionArea.appendChild(happyGirlImage);
         return descriptionArea;
     }
 
