@@ -1,6 +1,8 @@
 console.log("I am from index.js!");
 
 import {homePage} from './home.js';
+import {menuPage} from './menu.js';
+import {aboutPage} from './about.js';
 
 const pageManager = function(){
 
