@@ -16,32 +16,31 @@
 <p>Woman in tavern photo by <a href="https://stockcake.com/i/medieval-tavern-joy_752875_804181">Stockcake</a></p>
 </div> */}
 import TavernImage from './images/happy-tavern-joy.jpg';
+import { createManager } from './index.js';
 
 const homePage = function(){
 
     const appendHeaderElements = function(){
-        const headerArea = createElement("div","logo","");
-        const logoText = createElement("h1","","Terry's Terrific Tavern")
+        const headerArea = createManager.createElement("div","header","");
+        const logoText = createManager.createElement("h1","","Terry's Terrific Tavern")
         headerArea.appendChild(logoText);
         return headerArea;
     }
 
     const appendIntroElements = function(){
-        const introParagraph = createElement("p", "intro","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
+        const introParagraph = createManager.createElement("p", "intro","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
         return introParagraph;
     }
 
     const appendDescriptionElements = function(){
-        const descriptionArea = createElement("div","description area","");
-        const headerOne = createElement("h2","","50% off happy hour");
-        const descriptionOne = createElement("p","","Enjoy twice as much of our famous Wyrmwizz Ale between 5-8!");
-        const headerTwo = createElement("h2","","LFG nights-- everynight!");
-        const descriptionTwo = createElement("p","","Terry's Terrific Tavern is THE place to meet new adventurers!");
-        const headerThree = createElement("h2","","It's not just a bar");
-        const descriptionThree = createElement("p","","Each meal is freshly prepared, locally sourced, and has the taste of fine dining!");
-        const happyGirlImage = new Image();
-        happyGirlImage.src = TavernImage;
-        happyGirlImage.alt = "girl smiling in tavern";
+        const descriptionArea = createManager.createElement("div","description area","");
+        const headerOne = createManager.createElement("h2","","50% off happy hour");
+        const descriptionOne = createManager.createElement("p","","Enjoy twice as much of our famous Wyrmwizz Ale between 5-8!");
+        const headerTwo = createManager.createElement("h2","","LFG nights-- everynight!");
+        const descriptionTwo = createManager.createElement("p","","Terry's Terrific Tavern is THE place to meet new adventurers!");
+        const headerThree = createManager.createElement("h2","","It's not just a bar");
+        const descriptionThree = createManager.createElement("p","","Each meal is freshly prepared, locally sourced, and has the taste of fine dining!");
+        const happyGirlImage = createManager.createImage("./images/happy-tavern-joy.jpg");
         descriptionArea.appendChild(headerOne);
         descriptionArea.appendChild(descriptionOne);
         descriptionArea.appendChild(headerTwo);
@@ -52,20 +51,8 @@ const homePage = function(){
         return descriptionArea;
     }
 
-    const createElement = function(type, classString="", innerText=""){
-        const createdElement = document.createElement(type);
-        if (classString !== ""){
-            const classArray = classString.split(" ");
-            for (let singleClass of classArray){
-                createdElement.classList.add(singleClass);
-            }
-        }
-        createdElement.textContent = innerText;
-        return createdElement;
-    }
-
     const createHomePage = function(){
-        const homePage = createElement("div","home page","");
+        const homePage = createManager.createElement("div","home page","");
         homePage.appendChild(appendHeaderElements());
         homePage.appendChild(appendIntroElements());
         homePage.appendChild(appendDescriptionElements());
