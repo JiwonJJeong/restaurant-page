@@ -1,5 +1,12 @@
 import { createManager } from './index.js';
 
+import BreadImage from "./images/bread.jpg";
+import SteakImage from "./images/steak.jpg";
+import SaladImage from "./images/salad.jpg";
+import DarkBeerImage from "./images/dark-beer.jpg";
+import PaleAleImage from "./images/pale-ale.jpg";
+import CocktailImage from "./images/cocktail.jpg";
+
 console.log("hi I'm from menu.js!");
 
 const menuPage = function(){
