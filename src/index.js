@@ -84,6 +84,7 @@ const createManager = function () {
         const createdImage = new Image();
         createdImage.src = src;
         createdImage.alt = altText;
+        createdImage.height = "300";
         return createdImage;
     }
 
