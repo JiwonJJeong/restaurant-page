@@ -1,5 +1,15 @@
 /* stylesheet for all pages */
 
-h1{
-    color:red;
+:root {
+    padding:0;
+    margin:0;
+    --base-background-color: gray;
+    --content-background-color: brown;
+    --secondary-color: yellow;
+    --wood-texture: url(./images/oak-texture.jpg)
+}
+
+h1, h2, h3, p, div{
+    padding:0;
+    margin:0;
 }
