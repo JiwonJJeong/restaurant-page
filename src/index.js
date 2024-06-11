@@ -62,7 +62,7 @@ const pageManager = function () {
 
 
 
-    return { init, renderHomePage };
+    return { init };
 }();
 
 
@@ -92,6 +92,5 @@ const createManager = function () {
 
 
 pageManager.init();
-pageManager.renderHomePage();
 
 export {createManager};
