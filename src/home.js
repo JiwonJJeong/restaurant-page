@@ -40,7 +40,7 @@ const homePage = function(){
         const descriptionTwo = createManager.createElement("p","","Terry's Terrific Tavern is THE place to meet new adventurers!");
         const headerThree = createManager.createElement("h2","","It's not just a bar");
         const descriptionThree = createManager.createElement("p","","Each meal is freshly prepared, locally sourced, and has the taste of fine dining!");
-        const happyGirlImage = createManager.createImage(TavernImage);
+        const happyGirlImage = createManager.createImage(TavernImage, "happy girl in tavern");
         descriptionArea.appendChild(headerOne);
         descriptionArea.appendChild(descriptionOne);
         descriptionArea.appendChild(headerTwo);
