@@ -29,10 +29,11 @@ const menuPage = function(){
 
     const createMenuItem = function(nameOfItem, priceString, imageSrc, imageAlt){
         const menuItemArea = createManager.createElement("div","item area");
-        const itemName = createManager.createElement("h2","item name",nameOfItem);
+        const itemName = createManager.createElement("h3","item name",nameOfItem);
         const itemPrice = createManager.createElement("p","item price",priceString);
         const itemImage = createManager.createImage(imageSrc, imageAlt);
         menuItemArea.appendChild(itemName);
+        menuItemArea.appendChild(itemPrice);
         menuItemArea.appendChild(itemImage);
         return menuItemArea;
     }
@@ -40,17 +41,26 @@ const menuPage = function(){
     const appendMealElements = function(){
         const mealArea = createManager.createElement("div","meal area");
         const mealHeader = createManager.createElement("h2","meal header","Meals")
-        const itemTrollbread = createMenuItem("Trollbread", "6 silver");
-        const itemOwlbearSteak = createMenuItem("Owlbear Steak", "12 silver");
-        const itemErdtreeSalad = createMenuItem("Erdtree Salad", "9 silver");
+        const itemTrollbread = createMenuItem("Trollbread", "6 silver", BreadImage, "artisan bread roll");
+        const itemOwlbearSteak = createMenuItem("Owlbear Steak", "12 silver", SteakImage, "well-done steak on grill");
+        const itemErdtreeSalad = createMenuItem("Erdtree Salad", "9 silver", SaladImage, "beet and lettuce salad platter");
+        mealArea.appendChild(mealHeader);
+        mealArea.appendChild(itemTrollbread);
+        mealArea.appendChild(itemOwlbearSteak);
+        mealArea.appendChild(itemErdtreeSalad);
         return mealArea;
     }
 
     const appendDrinkElements = function(){
         const drinkArea = createManager.createElement("div","drink area");
-        const itemWyrmwizzAle = createMenuItem("Wyrmwizz Ale", "4 silver");
-        const itemGoodberryCocktail = createMenuItem("Goodberry Cocktail", "6 silver");
-        const itemHauntedCheer = createMenuItem("Haunted Cheer", "6 silver");
+        const drinkHeader = createManager.createElement("h2","drink header","Drinks");
+        const itemWyrmwizzAle = createMenuItem("Wyrmwizz Ale", "4 silver", PaleAleImage, "light-colored ale in glass");
+        const itemGoodberryCocktail = createMenuItem("Goodberry Cocktail", "6 silver", CocktailImage, "orange cocktail");
+        const itemHauntedCheer = createMenuItem("Haunted Cheer", "6 silver", DarkBeerImage, "dark beer poured");
+        drinkArea.appendChild(drinkHeader);
+        drinkArea.appendChild(itemWyrmwizzAle);
+        drinkArea.appendChild(itemGoodberryCocktail);
+        drinkArea.appendChild(itemHauntedCheer);
         return drinkArea;
     }
 
