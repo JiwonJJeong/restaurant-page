@@ -21,14 +21,14 @@ import { createManager } from './index.js';
 const homePage = function(){
 
     const appendHeaderElements = function(){
-        const headerArea = createManager.createElement("div","header","");
+        const headerArea = createManager.createElement("div","header area","");
         const logoText = createManager.createElement("h1","","Terry's Terrific Tavern")
         headerArea.appendChild(logoText);
         return headerArea;
     }
 
     const appendIntroElements = function(){
-        const introParagraph = createManager.createElement("p", "intro","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
+        const introParagraph = createManager.createElement("p", "intro text","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
         return introParagraph;
     }
 
