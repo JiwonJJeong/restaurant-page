@@ -33,6 +33,7 @@ const aboutPage = function(){
 
     const appendContactElements = function(){
         const contactArea = createManager.createElement("div","contact area");
+        const contactTitle = createManager.createElement("h1","contact title","Contact Us!");
         const contactForm = createManager.createElement("form", "contact-form");
         const firstNameField = createInputAndLabel("first-name","text","First Name");
         const lastNameField = createInputAndLabel("last-name","text","Last Name");
@@ -40,6 +41,7 @@ const aboutPage = function(){
         const commentField = createInputAndLabel("comment","text","Comments","Let us know what you think!");
         const submitButton = createManager.createElement("input","submit button","Submit");
         submitButton.type = "submit";
+        contactArea.appendChild(contactTitle);
         contactForm.appendChild(firstNameField.label);
         contactForm.appendChild(firstNameField.input);
         contactForm.appendChild(lastNameField.label);
