@@ -39,6 +39,7 @@ const aboutPage = function(){
         const mailAddressField = createInputAndLabel("mail-address","text","Mail Address","Where should we send our messenger pigeon?");
         const commentField = createInputAndLabel("comment","text","Comments","Let us know what you think!");
         const submitButton = createManager.createElement("input","submit button","Submit");
+        submitButton.type = "submit";
         contactForm.appendChild(firstNameField.label);
         contactForm.appendChild(firstNameField.input);
         contactForm.appendChild(lastNameField.label);
@@ -52,7 +53,7 @@ const aboutPage = function(){
         return contactArea;
     }
 
-    const createInputAndLabel = function(identifier,type, labelText, placeholder=null){
+    const createInputAndLabel = function(identifier,type, labelText, placeholder=""){
         const label = createManager.createElement("label",identifier, labelText);
         label.for = identifier;
         const input = createManager.createElement("input",identifier);
