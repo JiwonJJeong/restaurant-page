@@ -84,6 +84,7 @@ const createManager = function () {
         const createdImage = new Image();
         createdImage.src = src;
         createdImage.alt = altText;
+        return createdImage;
     }
 
     return {createElement, createImage}
