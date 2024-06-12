@@ -62,6 +62,8 @@ const aboutPage = function(){
         for (let input of inputs){
             input.value = "";
         }
+        const textarea = document.querySelector("textarea");
+        textarea.value = "";
     }
 
     const createInputAndLabel = function(identifier,type, labelText, placeholder=""){
