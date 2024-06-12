@@ -74,9 +74,14 @@ header .button{
     border-image-slice: 50;
     box-shadow: var(--box-shadow-settings);
     padding: 8px;
+    min-width: min-content;
 }
 
 /* style home page */
+.home.page .header.area{
+    min-width: 505px;
+}
+
 .home.page .header h1{
     font-family:"Beyond Wonderland";
     text-align: center;
@@ -90,6 +95,7 @@ header .button{
     align-items: center;
     font-size: 22px;
     gap: 10px;
+    min-width: 591px;
 }
 
 .home.page .intro.area .intro.text2, .home.page .intro.area .cheers{
@@ -105,6 +111,7 @@ header .button{
     display:flex;
     justify-content: space-around;
     gap: 20px;
+    min-width: 788px;
 }
 
 .home.page .description.text{
