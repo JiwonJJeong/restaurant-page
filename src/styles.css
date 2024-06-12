@@ -55,10 +55,6 @@ header .button{
     box-shadow: var(--box-shadow-settings);
 }
 
-
-
-
-
 /* every page will use the same content backing and page layout*/
 .page{
     margin: 50px;
@@ -134,3 +130,14 @@ header .button{
 }
 
 /* styling menu page, note that background, border, and font color are styled earlier*/
+.menu.page .header.area h1{
+    text-align: center;
+    font-weight:normal;
+    font-size: 40px;
+}
+
+.menu.page .header.area{
+    width: min-content;
+    padding: 0 70px;
+    align-self: center;
+}
