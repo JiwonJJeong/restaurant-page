@@ -30,7 +30,11 @@ const homePage = function(){
     const appendIntroElements = function(){
         const introArea = createManager.createElement("div","intro area","");
         const introParagraph = createManager.createElement("p", "intro text","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
+        const introParagraphTwo = createManager.createElement("p","intro text2","As we like to say at Terry's");
+        const introParagraphThree = createManager.createElement("p","cheers","Cheers!");
         introArea.appendChild(introParagraph);
+        introArea.appendChild(introParagraphTwo);
+        introArea.appendChild(introParagraphThree);
         return introArea;
     }
 

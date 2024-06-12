@@ -62,12 +62,24 @@ header .button{
     border-image: var(--wood-texture) round;
     border-image-slice: 50;
     box-shadow: var(--box-shadow-settings);
-    padding: 5px;
+    padding: 8px;
 }
 
 .home.page .intro.area {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    gap: 10px;
+}
+
+.home.page .intro.area .intro.text2, .home.page .intro.area .cheers{
+    text-align:center;
+}
+
+.home.page .intro.area .cheers{
+    font-family:cursive;
+    font-size: 50px;
 }
 
 .home.page .description.area {
