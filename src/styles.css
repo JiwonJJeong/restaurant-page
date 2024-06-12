@@ -1,4 +1,15 @@
 /* stylesheet for all pages */
+@font-face{
+    font-family: "Beyond Wonderland";
+    src: url("./fonts/Beyond\ Wonderland.woff2") format("woff2"),
+        url("./fonts/Beyond\ Wonderland.woff") format("woff");
+}
+
+@font-face{
+    font-family: "Great Vibes";
+    src: url("./fonts/GreatVibes-Regular.woff2") format("woff2"),
+        url("./fonts/GreatVibes-Regular.woff") format("woff");
+}
 
 :root {
     --base-background-color: gray;
@@ -51,8 +62,10 @@ header .button{
 }
 
 .home.page .header h1{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:"Beyond Wonderland";
     text-align: center;
+    font-weight:normal;
+    font-size: 50px;
 }
 
 .home.page > * {
@@ -78,7 +91,7 @@ header .button{
 }
 
 .home.page .intro.area .cheers{
-    font-family:cursive;
+    font-family:"Great Vibes";
     font-size: 50px;
 }
 
