@@ -40,6 +40,7 @@ const homePage = function(){
 
     const appendDescriptionElements = function(){
         const descriptionArea = createManager.createElement("div","description area","");
+        const descriptionTextArea = createManager.createElement("div","description text");
         const headerOne = createManager.createElement("h2","","50% off happy hour");
         const descriptionOne = createManager.createElement("p","","Enjoy twice as much of our famous Wyrmwizz Ale between 5-8!");
         const headerTwo = createManager.createElement("h2","","LFG nights-- everynight!");
@@ -47,12 +48,13 @@ const homePage = function(){
         const headerThree = createManager.createElement("h2","","It's not just a bar");
         const descriptionThree = createManager.createElement("p","","Each meal is freshly prepared, locally sourced, and has the taste of fine dining!");
         const happyGirlImage = createManager.createImage(TavernImage, "happy girl in tavern");
-        descriptionArea.appendChild(headerOne);
-        descriptionArea.appendChild(descriptionOne);
-        descriptionArea.appendChild(headerTwo);
-        descriptionArea.appendChild(descriptionTwo);
-        descriptionArea.appendChild(headerThree);
-        descriptionArea.appendChild(descriptionThree);
+        descriptionTextArea.appendChild(headerOne);
+        descriptionTextArea.appendChild(descriptionOne);
+        descriptionTextArea.appendChild(headerTwo);
+        descriptionTextArea.appendChild(descriptionTwo);
+        descriptionTextArea.appendChild(headerThree);
+        descriptionTextArea.appendChild(descriptionThree);
+        descriptionArea.appendChild(descriptionTextArea);
         descriptionArea.appendChild(happyGirlImage);
         return descriptionArea;
     }
