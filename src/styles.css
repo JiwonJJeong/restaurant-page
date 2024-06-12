@@ -73,7 +73,8 @@ header .button{
     font-size: 50px;
 }
 
-.home.page > * {
+/* every page will use the same content backing*/
+.page > * {
     background: var(--content-background-color);
     border-width: 5px;
     border-style: solid;
