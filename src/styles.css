@@ -42,6 +42,10 @@ nav {
     gap: max(40px, 5vw);
 }
 
+header{
+    margin: 20px;
+}
+
 header .button{
     background: var(--wood-texture);
     border: 2px solid var(--white-text-color);
@@ -54,6 +58,7 @@ header .button{
 /* style home page */
 .home.page{
     margin: 50px;
+    margin-top: 0;
     display:flex;
     flex-direction: column;
     align-items: stretch;
