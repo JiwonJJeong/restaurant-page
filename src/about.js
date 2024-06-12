@@ -39,8 +39,9 @@ const aboutPage = function(){
         const lastNameField = createInputAndLabel("last-name","text","Last Name");
         const mailAddressField = createInputAndLabel("mail-address","text","Mail Address","Where should we send our messenger pigeon?");
         const commentField = createInputAndLabel("comment","text","Comments","Let us know what you think!");
-        const submitButton = createManager.createElement("input","submit button","Submit");
-        submitButton.type = "submit";
+        const submitButton = createManager.createElement("button","submit button","Submit");
+        submitButton.type = "button";
+        submitButton.addEventListener("click", processFormSubmit);
         contactArea.appendChild(contactTitle);
         contactForm.appendChild(firstNameField.label);
         contactForm.appendChild(firstNameField.input);
@@ -53,6 +54,14 @@ const aboutPage = function(){
         contactForm.appendChild(submitButton);
         contactArea.appendChild(contactForm);
         return contactArea;
+    }
+
+    const processFormSubmit = function(){
+        console.log("Form has been submitted! But I won't actually process the info bc this is out of scope for the project! I'll just reset the form for you <3");
+        const inputs = document.querySelectorAll("input");
+        for (let input of inputs){
+            input.value = "";
+        }
     }
 
     const createInputAndLabel = function(identifier,type, labelText, placeholder=""){
