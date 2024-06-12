@@ -38,7 +38,7 @@ const aboutPage = function(){
         const firstNameField = createInputAndLabel("first-name","text","First Name");
         const lastNameField = createInputAndLabel("last-name","text","Last Name");
         const mailAddressField = createInputAndLabel("mail-address","text","Mail Address","Where should we send our messenger pigeon?");
-        const commentField = createInputAndLabel("comment","text","Comments","Let us know what you think!");
+        const commentField = createInputAndLabel("comment","textarea","Comments","Let us know what you think!");
         const submitButton = createManager.createElement("button","submit button","Submit");
         submitButton.type = "button";
         submitButton.addEventListener("click", processFormSubmit);
@@ -67,10 +67,16 @@ const aboutPage = function(){
     const createInputAndLabel = function(identifier,type, labelText, placeholder=""){
         const label = createManager.createElement("label",identifier, labelText);
         label.for = identifier;
-        const input = createManager.createElement("input",identifier);
+        let input;
+        if (type !== "textarea"){
+            input = createManager.createElement("input",identifier);
+            input.type = type;
+        } else {
+            input = createManager.createElement("textarea",identifier);
+            input.rows = "1";
+        }
         input.placeholder = placeholder;
         input.id = identifier;
-        input.type = type;
         return {label, input};
     }
 
