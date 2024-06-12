@@ -28,8 +28,10 @@ const homePage = function(){
     }
 
     const appendIntroElements = function(){
+        const introArea = createManager.createElement("div","intro area","");
         const introParagraph = createManager.createElement("p", "intro text","Welcome adventurers! Every dragon-slayer, orc-destroyer, dungeon-conquerer needs to relax at the best tavern in Fantasy Town! Enjoy top-quality food, drink, and song today!");
-        return introParagraph;
+        introArea.appendChild(introParagraph);
+        return introArea;
     }
 
     const appendDescriptionElements = function(){
