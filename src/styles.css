@@ -178,3 +178,30 @@ header .button{
     height: 300px;
     object-fit: cover;
 }
+
+/* stylize about page */
+.about.page .bio.area{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.about.page .contact-form{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-auto-rows: 50px; 
+    align-items: center;
+    margin: 10px;
+}
+
+.about.page .contact-form input{
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+
+.about.page .contact-form .submit.button{
+    grid-column: 2/3;
+    width: 80px;
+    justify-self: end;
+}
