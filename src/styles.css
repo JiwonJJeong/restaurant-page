@@ -141,3 +141,34 @@ header .button{
     padding: 0 70px;
     align-self: center;
 }
+
+/* override general page content background so that we can apply it to each menu item individually */
+.menu.page .meal.area, .menu.page .drink.area {
+    padding:0;
+    background: none;
+    border: none;
+    display:grid;
+}
+
+.menu.page .item.area{
+    background: var(--content-background-color);
+    border-width: 5px;
+    border-style: solid;
+    border-image: var(--wood-texture) round;
+    border-image-slice: 50;
+    box-shadow: var(--box-shadow-settings);
+    padding: 8px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.menu.page p{
+    min-width: 0;
+}
+
+.menu.page img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
