@@ -23,3 +23,5 @@ Oak texture from Architextures.
 
 Beyond Wonderland font by Chris Hansen from 1001 Fonts.
 Great Vibes font by TypeSETit from 1001 Fonts.
+
+Color palette inspiration from ColorHunt.

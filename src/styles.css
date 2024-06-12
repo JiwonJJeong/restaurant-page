@@ -12,9 +12,8 @@
 }
 
 :root {
-    --base-background-color: gray;
-    --content-background-color: rgb(59, 18, 18);
-    --secondary-color: yellow;
+    --base-background-color: #AF8F6F;
+    --content-background-color: #543310;
     --wood-texture: url(./images/oak-texture.jpg);
     --white-text-color: white;
     --box-shadow-settings: 2px 2px 2px black;
