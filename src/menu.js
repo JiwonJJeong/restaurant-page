@@ -14,15 +14,23 @@ const menuPage = function(){
     const createMenuPage = function(){
         console.log("hi I'm from menuPage.createMenuPage()!");
         const menuPage = createManager.createElement("div","menu page","");
-        menuPage.appendChild(appendHeaderElements());
+        menuPage.appendChild(appendMealHeaderElements());
         menuPage.appendChild(appendMealElements());
+        menuPage.appendChild(appendDrinkHeaderElements());
         menuPage.appendChild(appendDrinkElements());
         return menuPage;
     }
     
-    const appendHeaderElements = function(){
+    const appendMealHeaderElements = function(){
         const headerArea = createManager.createElement("div","header area");
-        const logo = createManager.createElement("h1","menu-title","Menu");
+        const logo = createManager.createElement("h1","meal-title","Meals");
+        headerArea.appendChild(logo);
+        return headerArea;
+    }
+
+    const appendDrinkHeaderElements = function(){
+        const headerArea = createManager.createElement("div","header area");
+        const logo = createManager.createElement("h1","drink-title","Drinks");
         headerArea.appendChild(logo);
         return headerArea;
     }
@@ -40,11 +48,9 @@ const menuPage = function(){
 
     const appendMealElements = function(){
         const mealArea = createManager.createElement("div","meal area");
-        const mealHeader = createManager.createElement("h2","meal header","Meals")
         const itemTrollbread = createMenuItem("Trollbread", "6 silver", BreadImage, "artisan bread roll");
         const itemOwlbearSteak = createMenuItem("Owlbear Steak", "12 silver", SteakImage, "well-done steak on grill");
         const itemErdtreeSalad = createMenuItem("Erdtree Salad", "9 silver", SaladImage, "beet and lettuce salad platter");
-        mealArea.appendChild(mealHeader);
         mealArea.appendChild(itemTrollbread);
         mealArea.appendChild(itemOwlbearSteak);
         mealArea.appendChild(itemErdtreeSalad);
@@ -53,11 +59,9 @@ const menuPage = function(){
 
     const appendDrinkElements = function(){
         const drinkArea = createManager.createElement("div","drink area");
-        const drinkHeader = createManager.createElement("h2","drink header","Drinks");
         const itemWyrmwizzAle = createMenuItem("Wyrmwizz Ale", "4 silver", PaleAleImage, "light-colored ale in glass");
         const itemGoodberryCocktail = createMenuItem("Goodberry Cocktail", "6 silver", CocktailImage, "orange cocktail");
         const itemHauntedCheer = createMenuItem("Haunted Cheer", "6 silver", DarkBeerImage, "dark beer poured");
-        drinkArea.appendChild(drinkHeader);
         drinkArea.appendChild(itemWyrmwizzAle);
         drinkArea.appendChild(itemGoodberryCocktail);
         drinkArea.appendChild(itemHauntedCheer);
