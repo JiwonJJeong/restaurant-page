@@ -1,32 +1,13 @@
 # restaurant-page
 The Odin Project JavaScript project to use DOM manipulation to dynamically render a restaurant homepage. Aimed to use npm, webpack, npm scripts, and ESM in development and production.
 
-## Skills Used:
+[Try it here!](https://jiwonjjeong.github.io/restaurant-page/)
 
-
-### Organize HTML, JS, CSS, and Asset Files
-- Download necessary plugins and applications with npm
-- Bundle JS modules, CSS, and assets into single file with webpack and webpack configurations
-- Automatically generate output HTML using custom template
-- Automate webpack with npm scripts
-- Configure webpack for source maps and watch mode in development
-- Navigate command line to manage and create files
-
-
-### Organize Code, Modularly!
-- Use ESM to split up JS code into modules
-- Import shared functions and use factory functions to keep code DRY
-- Import shared functions to program objects by composition > inheritance.
-- Declare functions inside IIFEs and only reveal necessary functions
-- Maintain consistent HTML class naming to be able to keep CSS code DRY
-- Declare CSS custom variables to easily change color palettes
-
-
-### Create a Page
-- Manipulate DOM through JS and button event listeners
-- Combine Flexbox and Grid to achieve desired layout
-- Stylize images, fonts, forms, buttons, and other HTML elements
-- Explore new CSS properties like border-image
+## Achieved Learning Skills
+- **Setting up webpack**: Used npm and configurations to setup bundler for JS modules, CSS, assets, and custom HTML template.
+- **Modular code across files**: Used ES6 modules to organize code by page.
+- **Modular code within files**: Used factory functions and IIFEs to organize code and abstract implementation details.
+- **Explore new CSS**: Experimented with border-image to create wooden frame render.
 
 
 ## Attribution
